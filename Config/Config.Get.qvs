@@ -1,0 +1,52 @@
+Config:
+LOAD 
+	Config.Property,
+	Config.ValueConfig
+FROM C:\Users\droman\Desktop\ADCsDecay\DESARROLLO\LULBi\PotatoBIApp\Config\Config.qvd (qvd);
+
+/***********************************************************************************************
+P A R A M E T R O S       X E R A I S
+***********************************************************************************************/
+
+let JobDir = lookup ('Config.ValueConfig', 'Config.Property', 'JobDir', 'Config');
+
+let DatQVGetProcess	= lookup ('Config.ValueConfig', 'Config.Property', 'DatQVGetProcess', 'Config');
+
+let CustomerConfFiles	= lookup ('Config.ValueConfig', 'Config.Property', 'Customer.Defs.Files', 'Config');
+
+let DatQVDDir 	= lookup ('Config.ValueConfig', 'Config.Property', 'DAT.QVDs', 'Config');
+
+let DatBBDDDir 	= lookup ('Config.ValueConfig', 'Config.Property', 'DAT.BBDD', 'Config');
+
+let QVProgram= lookup ('Config.ValueConfig', 'Config.Property', 'QVProgram', 'Config');
+
+//let ConnStr1 = lookup ('Config.ValueConfig', 'Config.Property', 'Conn.Str.1', 'Config');
+//let ConnStr = lookup ('Config.ValueConfig', 'Config.Property', 'Conn.Str.1', 'Config')  & '+' &  lookup ('Config.ValueConfig', 'Config.Property', 'Conn.Str.2', 'Config');
+//let ConnStr = lookup ('Config.ValueConfig', 'Config.Property', 'Conn.Str.2', 'Config') ;
+
+//let ModulesSNDir = lookup ('Config.ValueConfig', 'Config.Property', 'ModulesSNDir', 'Config');
+
+
+let JobDir4DatGet=lookup ('Config.ValueConfig', 'Config.Property', 'JobDir.APPs.BI.GET', 'Config');
+
+//GESTION
+let JobDirPrcss4Ges=lookup ('Config.ValueConfig', 'Config.Property', 'JobDir.GETs.BI.GES', 'Config');
+let JobDirAPP4Ges=lookup ('Config.ValueConfig', 'Config.Property', 'JobDir.APPs.BI.GES', 'Config');
+
+
+//TESORERIA
+//let BancoXDefecto = lookup ('Config.ValueConfig', 'Config.Property', 'Banco.X.Defecto', 'Config');
+let GesQVDsDir = lookup ('Config.ValueConfig', 'Config.Property', 'App.QVDs', 'Config');
+//let FinQVDsDir = lookup ('Config.ValueConfig', 'Config.Property', 'App.QVDs', 'Config');
+//let JobDirPrcss4Tes=lookup ('Config.ValueConfig', 'Config.Property', 'JobDir.GETs.BI.TES', 'Config');
+//let JobDirAPP4Tes=lookup ('Config.ValueConfig', 'Config.Property', 'JobDir.APPs.BI.TES', 'Config');
+
+
+//FINANCIERA
+//let AppQVDsPrefix = lookup ('Config.ValueConfig', 'Config.Property', 'Fin.App.QVDs.Prefix', 'Config');
+//let LongMaxCuenta = lookup ('Config.ValueConfig', 'Config.Property', 'Fin.LongMaxCuenta', 'Config');
+
+//let JobDirPrcss4Fin=lookup ('Config.ValueConfig', 'Config.Property', 'JobDir.GETs.BI.FIN', 'Config');
+//let JobDirAPP4Fin=lookup ('Config.ValueConfig', 'Config.Property', 'JobDir.APPs.BI.FIN', 'Config');
+
+
